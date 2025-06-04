@@ -1,0 +1,8 @@
+version: '3'
+services:
+  headless_chrome:
+    ports:
+      - 3000:3000
+    image: mjsommer/headless_chrome:v1.0.0
+    environment:
+      DEBUG: "*"
