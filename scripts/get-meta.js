@@ -12,14 +12,15 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
+const puppeteerVersion = "1.20.0";
 
-const {
-  dependencies: {
-    puppeteer: {
-      version: puppeteerVersion
-    }
-  }
-} = require('../package-lock.json');
+// const {
+//   dependencies: {
+//     puppeteer: {
+//       version: puppeteerVersion
+//     }
+//   }
+// } = require('../package-lock.json');
 
 const getChromePath = () => {
   return os.platform() === 'darwin' ?
